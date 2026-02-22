@@ -1,0 +1,5 @@
+browser:
+  tracing: true
+  video: true
+
+retryCount: 2

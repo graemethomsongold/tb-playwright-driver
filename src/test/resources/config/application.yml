@@ -1,0 +1,25 @@
+baseUrl: https://dev.example.com
+apiBaseUrl: https://api.dev.example.com
+
+browser:
+  type: chromium
+  headless: true
+  defaultTimeout: 30000
+  navigationTimeout: 60000
+  viewportWidth: 1920
+  viewportHeight: 1080
+  video: false
+  tracing: false
+  downloadsPath: target/downloads
+
+users:
+  standard: standard_user
+  admin: admin_user
+  locked: locked_user
+
+apiHeaders:
+  Content-Type: application/json
+  Accept: application/json
+
+retryCount: 1
+screenshotOnFailure: true

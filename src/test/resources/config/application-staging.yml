@@ -1,0 +1,7 @@
+baseUrl: https://staging.example.com
+apiBaseUrl: https://api.staging.example.com
+
+browser:
+  tracing: true
+
+retryCount: 1

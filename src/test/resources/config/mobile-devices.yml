@@ -1,0 +1,24 @@
+devices:
+  - name: iPhone 14
+    userAgent: "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1"
+    viewportWidth: 390
+    viewportHeight: 844
+    deviceScaleFactor: 3.0
+    isMobile: true
+    hasTouch: true
+
+  - name: Pixel 7
+    userAgent: "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36"
+    viewportWidth: 412
+    viewportHeight: 915
+    deviceScaleFactor: 2.625
+    isMobile: true
+    hasTouch: true
+
+  - name: iPad Pro
+    userAgent: "Mozilla/5.0 (iPad; CPU OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1"
+    viewportWidth: 1024
+    viewportHeight: 1366
+    deviceScaleFactor: 2.0
+    isMobile: true
+    hasTouch: true
