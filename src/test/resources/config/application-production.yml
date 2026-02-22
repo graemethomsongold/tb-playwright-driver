@@ -1,5 +1,5 @@
-baseUrl: https://www.example.com
-apiBaseUrl: https://api.example.com
+baseUrl: https://www.tescobank.com
+apiBaseUrl: https://www.tescobank.com
 
 browser:
   headless: true

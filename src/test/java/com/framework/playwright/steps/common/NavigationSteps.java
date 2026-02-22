@@ -2,6 +2,7 @@ package com.framework.playwright.steps.common;
 
 import com.framework.playwright.config.ConfigManager;
 import com.framework.playwright.core.PageManager;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 
@@ -39,5 +40,13 @@ public class NavigationSteps {
     @When("I refresh the page")
     public void iRefreshThePage() {
         page().getPage().reload();
+    }
+
+    @And("I accept cookies if required")
+    public void iAcceptCookiesIfRequired() {
+        var cookieBtn = PageManager.getPage().locator("button#ensAcceptAll");
+        if (cookieBtn.isVisible()) {
+            cookieBtn.click();
+        }
     }
 }

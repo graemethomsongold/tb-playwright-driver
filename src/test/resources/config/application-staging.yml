@@ -1,5 +1,4 @@
-baseUrl: https://staging.example.com
-apiBaseUrl: https://api.staging.example.com
+baseUrl: https://www.tescobank.com
 
 browser:
   tracing: true

@@ -132,14 +132,14 @@ mvn test -Pmobile
 
 | Area | Feature file | Tags |
 |------|-------------|------|
-| Login | `features/ui/login.feature` | `@smoke @regression` |
-| Home | `features/ui/home.feature` | — |
-| Search | `features/ui/search.feature` | `@regression` |
-| User API | `features/api/user_api.feature` | `@api @regression` |
+| Homepage | `features/ui/tesco_bank_homepage.feature` | `@smoke @regression` |
+| Savings Accounts | `features/ui/tesco_bank_savings.feature` | `@smoke @regression` |
+| Personal Loans | `features/ui/tesco_bank_loans.feature` | `@smoke @regression` |
 
 ## Adding New Tests
 
 1. **Create a Page Object** in `pages/` extending `BasePage`.
-2. **Write step definitions** in `steps/ui/` or `steps/api/`.
-3. **Add a feature file** under `features/ui/` or `features/api/` with appropriate tags (`@smoke`, `@regression`, `@api`, `@mobile`).
-4. Scenarios tagged `@wip` or `@flaky` are excluded from the default runner.
+2. **Write step definitions** in `steps/ui/` (or add to `TescoBankSteps` for simple steps).
+3. **Add a feature file** under `features/ui/` with appropriate tags (`@smoke`, `@regression`, `@mobile`).
+4. Include `And I accept cookies if required` in the Background of any feature that navigates to the Tesco Bank site.
+5. Scenarios tagged `@wip` or `@flaky` are excluded from the default runner.
